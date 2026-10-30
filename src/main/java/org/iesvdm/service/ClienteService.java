@@ -11,9 +11,6 @@ public class ClienteService {
 	
 	private ClienteDAO clienteDAO;
 	
-	//Se utiliza inyección automática por constructor del framework Spring.
-	//Por tanto, se puede omitir la anotación Autowired
-	//@Autowired
 	public ClienteService(ClienteDAO clienteDAO) {
 		this.clienteDAO = clienteDAO;
 	}
